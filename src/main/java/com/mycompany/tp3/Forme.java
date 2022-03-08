@@ -25,6 +25,11 @@ public abstract class Forme implements Comparable<Forme>{
             return -1;    
     
     }
+
+    @Override
+    double getDistanceOrigine() {
+        return Math.sqrt( x*x + y*y );
+    }
     
 
 
