@@ -4,8 +4,6 @@
  */
 package com.mycompany.tp3;
 
-import java.util.Comparator;
-
 /**
  *
  * @author amaaradji
@@ -13,7 +11,6 @@ import java.util.Comparator;
 public abstract class Forme implements Comparable<Forme>{
     double x, y;
     abstract double getSurface();
-    abstract double getDistanceOrigine();
 
     @Override
     public int compareTo(Forme other) {
@@ -23,15 +20,11 @@ public abstract class Forme implements Comparable<Forme>{
             return 1;    
         else    
             return -1;    
-    
     }
 
-    @Override
-    double getDistanceOrigine() {
+    public double getDistanceOrigine() {
         return Math.sqrt( x*x + y*y );
     }
     
-
-
 }
 
