@@ -10,7 +10,7 @@ import java.util.Comparator;
  *
  * @author amaaradji
  */
-public class myComparator implements Comparator<Forme>{
+public class MyComparator implements Comparator<Forme>{
 
     @Override
     public int compare(Forme o1, Forme o2) {

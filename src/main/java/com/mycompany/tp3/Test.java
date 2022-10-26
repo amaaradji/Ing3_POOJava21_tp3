@@ -50,7 +50,7 @@ public class Test {
             
             
             //tri selon Surface
-            myComparator comparator = new myComparator();
+            MyComparator comparator = new MyComparator();
             
             Collections.sort(list, comparator);
             
@@ -64,7 +64,7 @@ public class Test {
             list2.add(new Carre(10, 8, 3));//coordonnées du centre de la forme 10, 8
             list2.add(new Carre(-3, 0, 5));//coordonnées du centre de la forme -3, 0
             
-            myComparatorDistanceOrigine comparatorDis = new myComparatorDistanceOrigine();
+            MyComparatorDistanceOrigine comparatorDis = new MyComparatorDistanceOrigine();
             Collections.sort(list2, comparatorDis);
             
             // l'élément le plus éloigné de l'origine est le dernier élément de la liste
